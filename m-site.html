@@ -345,7 +345,11 @@
 
 
 <script>
-
+if (screen.width > 800) {
+  document.body.blur();
+      window.alert("Redirecting to Mobile site");
+  window.location = "index.html";
+}
 
 </script>
 
