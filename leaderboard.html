@@ -78,14 +78,14 @@
   ::-webkit-scrollbar
   { 
     background:grey;
-    width:10px;
+    width:7px;
    
     filter:  opacity(0.0);
   }
 
   ::-webkit-scrollbar-thumb{
-    background:#B0BEC5;
-    border-radius: 6px;
+    background:#f50136;
+    border-radius: 5px;
   }
 
   ::-webkit-scrollbar-thumb:hover{
@@ -339,6 +339,13 @@
         
       }
     }
+
+
+    if (screen.width <= 800) {
+  document.body.blur();
+      
+  window.location = "mleaderboard.html";
+}
 
 
 
