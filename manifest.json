@@ -1,0 +1,27 @@
+{
+    "short_name":"Rotaract RVCE",
+    "name":"Rotaract RVCE",
+    "description":"Rotaract RVCE's first PWA",
+    "icons":[
+
+        {
+            "src":"961.png",
+            "type":"image/png",
+            "sizes":"96x96"
+        },
+
+        {
+            "src":"192.png",
+            "type":"image/png",
+            "sizes":"192x192"
+        }
+    ],
+    "start_url":"index.html",
+    "display":"standalone",
+    "background_color":"#1a202c",
+    "theme_color":"#1a202c",
+    "scope":"/",
+
+
+}
+

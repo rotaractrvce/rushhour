@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="full.css">
+    
+    <style>
+      #hd{
+        background-color:rgb(41, 58, 77);
+      }
+      
+      html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+      #hov{
+        transition: transform .4s;
+        
+      }
+
+      #hov:hover{
+        transform: scale(1.07);
+      }
+
+      #hov1{
+        transition: transform .4s;
+        opacity: 1;
+      }
+
+      #hov1:hover{
+        transform: scale(1.1);
+      }
+
+     #navhigh{
+       font-size: 32px;
+     }
+
+      #navhigh:hover{
+        transform:scale(1.2);
+        color:white;
+        
+      }
+
+      #t{
+     background-image: url("1.1.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     transition: transform .4s;
+        opacity: 1;
+    
+   }
+
+   #t:hover{
+
+    transform: scale(1.1);
+   }
+      
+
+
+   .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+      
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background-color:#1a202c;
+}
+
+
+    </style>
+    <title style="color:black">Rotaract Club of RVCE</title>
+    <link rel = "icon" href =  
+"rlogosmall.png" 
+        type = "image/x-icon"> 
+</head>
+<body>
+
+  <div id="load"><img src="rlogo.png" style="padding-left:35%;padding-top:105px;margin-right:0px;"><img src="oval.svg" style="width:100%;transform: scale(0.5);fill:currentColor;"> </div>
+  <div id="contents"></div>
+
+  <header class="text-gray-700 body-font" id="hd" style="background-image: url('mobmoto1.png');height:300px;background-repeat: no-repeat;background-position-y:100px;background-color: #1a202c;">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="width:280px;padding-left:240;float:left;display:block">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" >
+        <img src="rlogo.png" style="padding-left:1px;transform: scale(0.8);" style="">
+          
+        <span class="ml-3 text-xl"></span>
+      </a>
+      
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center" style="color:white;" >
+       <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="padding-bottom:0px;padding-left:90%">&times;</a>
+          <div class="overlay-content" style="margin-top: 10px;">
+            <a class="mr-5 hover:text-gray-900" id="navhigh"  style="color:#f50136;">Home</a>
+            <a href="mabout.html" class="mr-5 hover:text-gray-900" id="navhigh">About</a>
+            <a href="mupcoming.html" class="mr-5 hover:text-gray-900" id="navhigh">Upcoming</a>
+            <a href="events.html" class="mr-5 hover:text-gray-900" id="navhigh">Events</a>
+            <a class="mr-5 hover:text-gray-900" id="navhigh">Experience</a>
+            <a class="mr-5 hover:text-gray-900">Board</a>
+            <a href="https://www.rotary.org/en" style="padding-bottom: 4px;"><span style="font-size: 32px;">Rotary</span></a>
+          </div>
+        </div>
+      </nav>
+           
+     
+     
+    </div>
+    <div style="font-size:30px;display:inline-block; width:50px;padding-top:60px;padding-left:55px; float:left;" onclick="openNav()"><span style="color:#f50136;font-weight: bold;">&#9776;</span></div>
+ 
+
+     </header>
+ 
+ 
+
+
+
+ 
+
+  
+  <section class="text-gray-400 bg-gray-900 body-font" style="padding-top: 0px; opacity: 1;">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap" style="padding-top:5px">
+      <div class="lg:w-2/3 mx-auto" >
+        
+        <div class="flex flex-wrap w-full bg-gray-800 py-32 px-10 relative mb-4"  id="t">
+          <div class="text-center relative z-10 w-full">
+            <a class="mt-3 text-teal-300 inline-flex items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <image href="" x="0" y="0" height="50px"/>
+              </svg>
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap -mx-2" >
+          <div class="px-2 w-1/2"   id="">
+            <div class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://dummyimage.com/542x460">
+              <div class="text-center relative z-10 w-full">
+                
+
+              </div>
+            </div>
+          </div>
+
+          <div class="px-2 w-1/2"   id="hov1">
+            <div class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://dummyimage.com/542x420">
+              <div class="text-center relative z-10 w-full">
+                
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!--
+  <section class="text-gray-700 body-font" style="background-color: rgba(203,213,224,var(--text-opacity));" >
+    <div class="container px-5 py-24 mx-auto" style="padding-bottom: 10px;">
+      <div class="flex flex-wrap -m-4">
+        
+        
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full" style="padding-left:30px">
+          <a class="block relative h-48 rounded overflow-hidden" style="width:300px;height:300px">
+            <img src="/indexsources/panduranga_setty-removebg-preview.png" >
+          </a>
+          
+        </div>
+        <br>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full" style="padding-left:30px">
+          <a class="block relative h-48 rounded overflow-hidden" style="width:300px;height:300px">
+            <img src="/indexsources/principal_rv-removebg-preview.png" >
+          </a>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+-->
+  
+
+
+  <section class="text-gray-700 body-font" style="background-color:#1a202c">
+    <div class="container px-5 py-24 mx-auto flex flex-col" style="padding-top: 0px;padding-bottom:10px">
+      <div class="lg:w-4/6 mx-auto">
+        <div class="flex flex-col sm:flex-row mt-10">
+          <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8" style="border-right: 20px; border-color: black;">
+            
+            <div class="flex flex-col items-center text-center justify-center">
+              <h2 class="font-medium title-font mt-4 text-gray-900 text-lg" style="font-size:30px;color:white;height:fit-content">Who are we?</h2>
+              <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4" style="width:100%"></div>
+              <p class="text-base text-gray-600"></p>
+            </div>
+          </div>
+          <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-grey-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left" style="border-color: #1a202c;">
+            <p class="leading-relaxed text-lg mb-4" style="align-items: center;">
+              Rotaract RVCE is one of the most oldest and dynamic clubs in Rvce. We are a group of enthusiastic individuals who strive ahead for bringing about a positive change in our society. We work under our parent Rotary Club-3190 Our Mottos are as follows:
+              <ol>
+                  <li>1.To develop professional Skills in an individual.</li>
+                  <br>
+                  <li>2.To inculcate leadership skills, through leading events and organizing of large scale projects within or outside the college.</li>
+                  <br>
+                  <li>3.To realize the innate talent and ability residing in every individual and help him/her come to terms with the full range of his potential.</li>
+                  <br>
+                  <li>4.To recognize, practice and promote ethical standards as management qualities and vocational responsibilities.</li>
+
+              </ol>
+            </p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <section class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto" style="padding-top:10px;padding-bottom: 8px;">
+    
+      <div class="flex flex-wrap -m-4 text-center" >
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-800 px-4 py-6 rounded-lg" style="display: block;float: left;width:50%;border: none;">
+            <img src="/indexsources/image1.png" style="padding-left: 17px; padding-top: 5px;">
+            <h2 class="title-font font-medium text-3xl text-white" style="font-size: smaller;">1500+</h2>
+            <p class="leading-relaxed" style="font-size: smaller;">Happy People Each Year</p>
+          </div>
+
+          <div class="border-2 border-gray-800 px-4 py-6 rounded-lg" style="display: block;float:right;width:50%;border: none;">
+            <img src="/indexsources/fb.png" style="padding-left: 38px;">
+            <h2 class="title-font font-medium text-3xl text-white" style="font-size: smaller;">5K+</h2>
+            <p class="leading-relaxed" style="font-size: smaller;">Followers on FB</p>
+          </div>
+        </div>
+
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-800 px-4 py-6 rounded-lg" style="display: block;float: left;width:50%;border: none;">
+            <img src="/indexsources/bulb.png" style="padding-left: 40px; padding-top: 5px;">
+            <h2 class="title-font font-medium text-3xl text-white" style="font-size: smaller;">1200+</h2>
+            <p class="leading-relaxed" style="font-size: smaller;">Succesful Projects</p>
+          </div>
+
+          <div class="border-2 border-gray-800 px-4 py-6 rounded-lg" style="display: block;float:right;width:50%;border: none;">
+            <img src="/indexsources/members.png" style="padding-left: 38px;">
+            <br>
+            <h2 class="title-font font-medium text-3xl text-white" style="font-size: smaller;">800+</h2>
+            <p class="leading-relaxed" style="font-size: smaller;">Registrations</p>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="text-gray-700 body-font" style="background-color: #1a202c;">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap" style="padding-top:18px">
+      <div class="flex w-full mb-20 flex-wrap" style="margin-bottom: 3px;">
+        <div>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4"  style="width:180px;margin-bottom: 0px;color:white">Our Events</h1>
+        
+        </div>
+        <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"  style="width:100%;" ></div>  
+       </div>
+      <div class="flex flex-wrap md:-m-2 -m-1" style="margin-bottom: 2px;">
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-1/2" id="hov">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="/eventposters/ethinic2020.png">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" id="hov">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="/eventposters/eyecheck.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-full" id="hov">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="/eventposters/paperdrive2020.jpg">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-full" id="hov">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="/eventposters/raabta.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" id="hov">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="/eventposters/bdc.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" id="hov">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="/eventposters/akshara2020.png">
+          </div>
+        </div>
+      </div>
+     
+      <div class="flex flex-wrap md:-m-2 -m-1">
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-1/2" id="hov">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="/eventposters/muskaan.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" id="hov">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="/eventposters/pmcares.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-full" id="hov">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="/eventposters/uptown2020.jpg">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-full" id="hov">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="/eventposters/megatrek2020.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" id="hov">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="/eventposters/bdc.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" id="hov">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="/eventposters/polio.jpg">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr style="color: #f50136; border-color: #f50136; border-width: 4px;">
+  <footer class="text-gray-700 body-font" style="background-color: rgba(26,32,44); ">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col" style="height:190px; padding-top: 0px;">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left" style="width:130px; padding-top:20px;">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" style="padding-left: 0px;">
+          <img src="rlogo.png">
+          
+        </a>
+        
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center" style="padding-top: 10px;padding-left:0px;">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <a href="index.html"><h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="color:white; width:60px">Home</h2></a>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <a href="about.html"><h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="color:white; width:60px">About</h2></a>
+         
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <a href="events.html"><h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="color:white; width:60px">Events</h2></a>
+         
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+           <a href=""><h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="color:white; width:60px">Board</h2></a>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    </div>
+    <div class="bg-gray-200" style="background-color:rgb(41, 58, 77); ">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-gray-500 text-sm text-center sm:text-left">Rotaract Club of RVCE
+            <a href="http://rotaractrvce3190.com/news.html" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">District 3190</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <a href="https://www.facebook.com/RotaractRVCE" class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/rotaractrvce/" class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+  </footer>
+
+
+<script>
+if (screen.width > 800) {
+  document.body.blur();
+      
+  window.location = "index.html";
+}
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },1000);
+  }
+}
+
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent the mini-infobar from appearing on mobile
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI notify the user they can install the PWA
+  showInstallPromotion();
+});
+
+buttonInstall.addEventListener('click', (e) => {
+  // Hide the app provided install promotion
+  hideMyInstallPromotion();
+  // Show the install prompt
+  deferredPrompt.prompt();
+  // Wait for the user to respond to the prompt
+  deferredPrompt.userChoice.then((choiceResult) => {
+    if (choiceResult.outcome === 'accepted') {
+      console.log('User accepted the install prompt');
+    } else {
+      console.log('User dismissed the install prompt');
+    }
+  });
+});
+
+window.addEventListener('appinstalled', (evt) => {
+  // Log install to analytics
+  console.log('INSTALL: Success');
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  let displayMode = 'browser tab';
+  if (navigator.standalone) {
+    displayMode = 'standalone-ios';
+  }
+  if (window.matchMedia('(display-mode: standalone)').matches) {
+    displayMode = 'standalone';
+  }
+  // Log launch display mode to analytics
+  console.log('DISPLAY_MODE_LAUNCH:', displayMode);
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.matchMedia('(display-mode: standalone)').addListener((evt) => {
+    let displayMode = 'browser tab';
+    if (evt.matches) {
+      displayMode = 'standalone';
+    }
+    // Log display mode change to analytics
+    console.log('DISPLAY_MODE_CHANGED', displayMode);
+  });
+});
+
+</script>
+
+</body>
+</html>
+
+

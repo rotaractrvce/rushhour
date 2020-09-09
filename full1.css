@@ -3,8 +3,6 @@
     -webkit-text-size-adjust: 100%;
   }
   
-  background-color: rgba(203,213,224,var(--text-opacity));
-
   body {
     margin: 0;
   }
